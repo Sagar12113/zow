@@ -1,0 +1,101 @@
+@import "variables";
+
+
+.contact{
+  margin-top:calc(-3.51rem / 2);  
+  padding:0 3rem;
+  min-height:100vh;
+  display: flex;  
+
+    .contactContent{
+      display: flex;
+      background: rgba($color: $white, $alpha: .6);
+      box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.3);
+      border-radius: $border;
+      width: $max_width;
+
+      margin: auto;
+      padding: 3rem 0;
+      
+      .info{
+        width: 50%;
+
+        // border-right: 2px solid $font_color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .heading{
+          h3{
+            text-align: center;
+            font-size: clamp(2rem, 5vw, 6rem);
+          }
+        }
+        .contact_info{
+          width: 25rem;
+          div{
+            color: $font_color;
+            margin: 1rem 0;
+            font-size: 1.3rem;
+            display: flex;
+
+            i{
+              color: $orange;
+              margin: 0 1rem;
+            }
+          }
+        }
+      }
+
+      form{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 98;
+
+        .form_fld{
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          label{
+            color: $font_color;
+          }
+          input, textarea{
+            background: none;
+            border: none;
+            color: $font_color;
+            border-bottom: 1px solid $font_color;
+            padding:0 5px 5px 5px;
+            margin-bottom:1rem;
+            &:focus {
+              outline: none;
+             }
+          }
+          .submit_button{
+            width: 100%;
+            display: grid;
+            place-items: center;
+            margin-top: 2rem; 
+            .btn{
+              width: 150px;
+              height: 44px;
+              display: grid;
+              place-items: center;
+              background: $gradient;
+              border-radius: 60px;
+              border: none;
+              color: $white;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+            }
+            
+          }
+        }
+      }
+        
+    }
+  
+}

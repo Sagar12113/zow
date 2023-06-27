@@ -1,0 +1,110 @@
+$nav :#323232 ;
+$default_bg : #F6F6F6;
+$orange : #FB9400;
+$font_color : #878C8E;
+$basic_font_color : #17191B;
+// $gradient  :linear-gradient(180deg, #FB9400 0%, rgba(255, 229, 0, 0.6) 100%);
+$gradient : linear-gradient(180deg, #FB9400 10%, #fbff00 250%);
+$bg : #1C1C1C;
+$white : #fff;
+$black :#000;
+$max_width : 1320px;
+$gap : 20px;
+$animationSpeed: 40s;
+$border : 20px;
+$box_heading : clamp(3rem,5vw, 6rem );
+$box_heading_weight: 800;
+$gradientZits  :linear-gradient(180deg, rgba(151, 71, 255, 1) 0%, rgba(26, 26, 26, 1) 100%);
+$nav_hight : 3.5rem;
+
+@mixin max_width {
+    max-width: $max_width;
+    margin: auto;
+}
+.max_w{
+    @include max_width;
+}
+@mixin orange_gradient{
+    background: $gradient ;
+}
+@mixin gradientZits{
+    background: $gradientZits ;
+}
+@mixin subsidiaries_fSize{
+    h2{                   
+        font-size: clamp(1.5rem, 2vw, 2.5rem);
+    }
+}
+
+@mixin mixinheading {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Chakra Petch';
+  }
+  
+  .sub_heading{
+      @include orange_gradient;
+      @include mixinheading;
+    h3{
+        font-size: 2rem;
+    }
+  }
+.secondary_heading{
+    @include orange_gradient;
+    @include mixinheading;
+    h3{
+        font-size: $box_heading;
+        font-weight: $box_heading_weight;
+    }
+
+}
+
+.main_heading{
+    @include orange_gradient;
+    @include mixinheading;
+    h3{
+        text-align: center;
+        font-size: clamp(2rem, 6vw, 8rem);
+    }
+}
+
+.zits_subsidiaries{
+    @include gradientZits;
+    @include mixinheading;
+    @include subsidiaries_fSize;
+}
+
+
+@mixin btn {
+    background: $gradient ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+
+
+
+
+.main_btn{
+    width: 150px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 60px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    // border: 2px solid $orange;
+    border-width: 2px;
+    border-style: solid;
+    border-image: $orange ;
+    color: $orange;
+    &:hover{
+        border-width: 0;
+        background: $gradient;
+        color: $white;
+    }
+
+}

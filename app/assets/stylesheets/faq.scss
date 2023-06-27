@@ -1,0 +1,73 @@
+@import "variables";
+
+
+.faq{
+    // background: $bg;
+    min-height:100vh;
+    padding: 3rem 0;
+    position: relative;
+    // .zoitw_text{
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     color: rgba($color: $white, $alpha: .1);
+    //     font-family: 'Roboto';
+    //     font-style: normal;
+    //     font-weight: 700;
+    //     line-height: normal;
+    //     font-size: clamp(5rem, 25vw, 30rem );
+    // }
+    .faqContent{
+        .heading{
+            h3{
+                text-align: center;
+                font-size: clamp(3rem, 8vw, 16rem);
+            }
+        }
+        #FAQ {
+            .content{
+              .accordion{
+                max-width: 1200px;
+                margin: auto;
+                --bs-accordion-bg: $black;
+                --bs-accordion-active-bg: $black;
+                --bs-accordion-border-color:none;
+                --bs-accordion-btn-focus-box-shadow:none;
+                // --bs-accordion-btn-active-icon:url(/img/home/clintlogo/01.png);
+                .accordion-item{
+                  // background: $black;
+                  background: rgba($color: $white, $alpha: .6);
+                  color: $font_color;
+                  margin: 1rem 0;
+                  border-radius: 10px;
+                  outline: none;
+                  .accordion-header{
+                    --bs-accordion-active-color: $white;
+                    .accordion-button{
+                        color: $orange;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                    }
+                      .accordion-button::after {
+                          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FB9400'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                          background-size: 2.5rem;
+                          width: 3rem;
+                          height: 3rem;
+                        
+                      }}
+                  .show{
+                    color: $font_color
+                  }
+                }
+              }
+            }
+          }
+    }
+}
+// .sectorsWeServe{
+//     .sectorContent{
+//         max-width: $max_width;
+//         margin: auto;
+//     }
+// }

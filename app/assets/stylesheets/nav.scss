@@ -1,0 +1,95 @@
+@import "variables";
+
+
+.navbar{
+    background: $black;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    height: $nav_hight;
+    .container{
+        width: 100%;
+        // position: relative;
+        .collapse{
+            ul{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                li{
+                    display: flex;
+                    align-items: center;
+                    height: $nav_hight;
+
+                    .othernav_link{
+                        color: $orange;
+                        visibility: hidden;
+                        transition: transform .3s ease-in-out;
+                        i{
+                            font-size: 1.2rem;
+                        }
+                        .content{
+                            position: absolute;
+                            top: 3.51rem;
+                            left: 0;
+                            width: 100%;
+                            .nav_content{
+                                width: 100%;
+                                height: fit-content;
+                                padding: 3rem 0;
+                                background: $white;
+                                // background: red;
+                                display: grid;
+                                place-items: center;
+                                .page_link_group{
+                                    width: fit-content;
+                                    display: grid;
+                                    grid-template-columns: repeat(2, 1fr);
+                                    grid-template-rows: auto;
+                                    grid-gap: 20px;
+                                    .link{
+                                        display: flex;
+                                        .col_1{
+                                            color: $orange;
+                                            padding: 2px 10px;
+                                            i{
+                                                font-size: 1.5rem;
+                                            }
+                                        }
+                                        .col_2{
+                                            .page_link{
+                                                color: $orange;
+                                                font-size: 1.5rem;
+                                            }
+                                            h6{
+                                                color: $font_color;
+                                            }
+                                        }
+                                    }
+                                }
+        
+        
+                            }
+                        }
+                    }
+                    &:hover{
+                        .othernav_link{
+                            visibility: visible;
+                        }
+                    }
+                    .nav-link{
+                        color:$white;
+                        height: $nav_hight;
+                        display: flex;
+                        align-items: center;
+
+                    }
+                    .active{
+                        color: $orange !important;
+                    }
+                }
+            }
+        }
+    }
+}

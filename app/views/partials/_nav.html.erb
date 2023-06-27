@@ -1,0 +1,213 @@
+<%= stylesheet_link_tag "nav" %>
+
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <%= link_to root_path do %>
+    <%= image_tag "ZOITW.png", alt: "Logo" %>
+    <% end %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <%= link_to  "Home", "/", :class =>  "nav-link #{'active' if current_page?(root_path)}" %>
+            <div class="othernav_link">
+              <i class="bi bi-chevron-up"></i>
+              <div class="content">
+                <div class="nav_content">
+                  <div class="page_link_group">
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+        </li>
+        <li class="nav-item">
+            <%= link_to "About Us", about_path, class: "nav-link #{'active' if current_page?(about_path)}" %>
+          <div class="othernav_link">
+              <i class="bi bi-chevron-up"></i>
+              <div class="content">
+                <div class="nav_content">
+                  <div class="page_link_group">
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </li>
+         <li class="nav-item">
+            <%= link_to "Social Relation", social_relation_path, class: "nav-link #{'active' if current_page?(social_relation_path)}" %>
+            <div class="othernav_link">
+              <i class="bi bi-chevron-up"></i>
+              <div class="content">
+                <div class="nav_content">
+                  <div class="page_link_group">
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </li>
+         <li class="nav-item">
+            <%= link_to "FAQ", faq_path, class: "nav-link #{'active' if current_page?(faq_path)}" %>
+            <div class="othernav_link">
+              <i class="bi bi-chevron-up"></i>
+              <div class="content">
+                <div class="nav_content">
+                  <div class="page_link_group">
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                    <div class="link">
+                      <div class="col_1">
+                      <i class="bi bi-file-bar-graph"></i>
+                      </div>
+                      <div class="col_2">
+                      <%= link_to  "Sectors We Serve", "/" , :class => "page_link" %>
+                      <h6>Learn about Lorem Ipsum</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </li>
+      </ul>
+        <%= link_to "Contact Us", contact_path, class: "main_btn #{'active' if current_page?(contact_path)}" %>
+    </div>
+  </div>
+</nav>
+
+

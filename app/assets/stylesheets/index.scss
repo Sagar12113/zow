@@ -1,0 +1,329 @@
+@import "variables";
+
+
+.home_greetings {
+    max-width: $max_width;
+    margin: 0 auto;
+    height: calc(100vh - 3rem);
+    position: relative;
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        transform: translate(-3%, -50%);
+
+        h2 {
+            font-weight: 300;
+            font-size: 60px;
+            text-transform: uppercase;
+            color: $font_color;
+            position: relative;
+            width: fit-content;
+
+            &:after {
+                content: '';
+                position: absolute;
+                height: 3px;
+                bottom: -4px;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                width: 100%;
+                background: $font_color;
+            }
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: clamp(5rem, 16vw, 24rem);
+            text-transform: uppercase;
+            color: $basic_font_color;
+        }
+    }
+}
+
+.who_we_are {
+    max-width: $max_width;
+    margin: 0 auto;
+    display: flex;
+    font-family: 'Chakra Petch';
+
+    .sub_heading {
+        width: 300px;
+        padding: 0 2rem;
+
+    }
+
+    .content {
+        width: calc(100% - 300px);
+
+        p {
+            font-weight: 400;
+            font-size: 30px;
+            // line-height: 60px;
+            text-align: right;
+            color: $basic_font_color;
+        }
+    }
+
+}
+
+.sectorsWeServe,
+.MissionVision,
+.serving_Globbly {
+    background: $black;
+    min-height: 30rem;
+    padding: 3rem 0;
+    position: relative;
+    z-index: 0;
+
+    .zoitw_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba($color: $white, $alpha: .1);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        font-size: clamp(5rem, 25vw, 30rem);
+        z-index: -1;
+    }
+}
+
+.sectorsWeServe {
+    .sectorContent {
+        max-width: $max_width;
+        margin: auto;
+    }
+}
+
+.serving_Globbly {
+
+    .servingContent {
+        .main_heading {
+
+            max-width: $max_width;
+            // margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 8;
+
+            h3 {
+                width: max-content;
+            }
+        }
+
+    }
+    .map{
+        .demo {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          #globe-3d, #globe-2d-overlay, #globe-popup-overlay, .globe-popup {
+            display: block;
+            position: absolute;
+          }
+          #globe-2d-overlay, #globe-popup-overlay {
+            pointer-events: none;
+          }
+    }
+}
+
+
+
+.MissionVision {
+    .missionVisionContent {
+        max-width: $max_width;
+        margin: auto;
+        display: flex;
+        z-index: 2;
+
+        .head_content {
+            width: 50%;
+
+            p {
+                color: $white;
+                font-size: 22px;
+                line-height: 40px;
+            }
+
+            ul {
+                display: flex;
+                width: 100%;
+
+                li {
+                    font-size: 22px;
+                    line-height: 22px;
+
+                }
+
+                li:not(:first-child) {
+                    margin: 0 0 0 .5rem;
+                    padding: 0 0 0 .5rem;
+                    border-left: 2px solid $font_color ;
+                }
+            }
+
+        }
+
+        .content {
+            width: 50%;
+
+            .mission {
+                border: 1px solid $white;
+                border-bottom: .5px solid $white;
+            }
+
+            .vision {
+                border: 1px solid $white;
+                border-top: .5px solid $white;
+            }
+
+            .mission,
+            .vision {
+                width: 40rem;
+                height: fit-content;
+                position: relative;
+
+                .topLeft,
+                .topRight,
+                .bottomLeft,
+                .bottomRight {
+                    position: absolute;
+                }
+
+                .topLeft {
+                    top: 0;
+                    left: 0;
+                }
+
+                .topRight {
+                    top: 0;
+                    right: 0;
+                }
+
+                .bottomLeft {
+                    bottom: 0;
+                    left: 0;
+                }
+
+                .bottomRight {
+                    bottom: 0;
+                    right: 0;
+                }
+
+                padding: 2rem;
+
+                p {
+                    color: $white;
+                    line-height: 25px;
+                }
+
+            }
+        }
+    }
+}
+
+.careers {
+    max-width: $max_width;
+    margin: 3rem auto;
+
+    p {
+        color: $font_color;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .carousel {
+        button {
+            svg {
+                width: 4rem;
+
+            }
+        }
+    }
+
+    .careers_options_desktop {
+        width: 100%;
+
+        .items {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: $gap;
+            padding: $gap;
+            flex-wrap: wrap;
+
+            .box {
+                width: fit-content;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .careers_logo {
+                    width: 98px;
+                }
+
+                .text {
+                    width: 200px;
+                    height: 70px;
+                    background: rgba($color: $white, $alpha: .6);
+                    box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.3);
+                    border-radius: $border;
+                    display: grid;
+                    place-items: center;
+                    text-align: center;
+
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $nav;
+                    margin-top: 1rem;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+.ourSubsidiaries {
+
+    // position: relative;
+    .main_heading {
+        position: sticky;
+        top: 3.51rem;
+        z-index: 10;
+    }
+
+    .Subsidiaries_container {
+
+        // height: 300vh;
+        .SubsidiariesContent_text {
+            display: flex;
+            margin: 2rem 0;
+
+
+            .Subsidiaries_img {
+                width: 50%;
+
+                .subsidiaries_img1 {
+                    width: 100%;
+                }
+
+            }
+
+            .Subsidiaries_text {
+                width: 50%;
+
+            }
+        }
+    }
+}

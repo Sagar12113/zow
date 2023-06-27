@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "variables";
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    font-family: 'Roboto';
+    background: $default_bg;
+ }
+
+ 
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    // background: orange;
+    background: $gradient;
+
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.main_render{
+    background-image: url('bgz1.png');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    // min-height: 90vh;
+    // z-index: -1;
+    margin-top:3.51rem;
+}
